@@ -25,3 +25,13 @@ body {
     color: rgba(10, 171, 215, 0.792);
   }
 } */
+
+body.light-theme {
+  background-color: #c8f112;
+  color: #333;
+}
+
+body.dark-theme {
+  background-color: #ba0fb7;
+  color: #2872a3;
+}
