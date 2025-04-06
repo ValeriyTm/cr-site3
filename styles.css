@@ -8,9 +8,9 @@ body {
   font-size: 1.3em;
 }
 
-:root {
+/* :root {
   color-scheme: light dark;
-}
+} */
 
 /* body {
   color: light-dark(rgb(63, 19, 139), rgb(34, 219, 61));
