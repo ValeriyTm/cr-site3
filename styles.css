@@ -18,14 +18,14 @@ body {
 } */
 
 @media (prefers-color-scheme: light) {
-  .block {
+  body {
     background: rgb(215, 222, 9);
     color: black;
   }
 }
 
 @media (prefers-color-scheme: dark) {
-  .block {
+  body {
     background: rgb(222, 9, 162);
     color: rgba(10, 171, 215, 0.792);
   }
