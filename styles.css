@@ -4,34 +4,22 @@ main {
 }
 
 :root {
-  color-scheme: dark light;
+  --grid-unit: 1rem;
+  --border-radius-base: 0.5rem;
 }
 
+[data-theme="light"] {
+  --color-bg: #ffffff;
+  --color-fg: #000000;
+}
+
+[data-theme="dark"] {
+  --color-bg: #000000;
+  --color-fg: #ffffff;
+}
+
+/* example use of CSS custom properties */
 body {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 1.3em;
-  background-color: light-dark(#c8f112, #ba0fb7);
-  color: light-dark(#333, #2872a3);
-}
-
-/* body {
-  color: light-dark(rgb(63, 19, 139), rgb(34, 219, 61));
-  background-color: light-dark(rgb(180, 65, 65), rgb(206, 208, 54));
-} */
-
-/* @media (prefers-color-scheme: dark) {
-  body {
-    background: rgb(222, 9, 162);
-    color: rgba(10, 171, 215, 0.792);
-  }
-} */
-
-body.light-theme {
-  background-color: #c8f112;
-  color: #333;
-}
-
-body.dark-theme {
-  background-color: #ba0fb7;
-  color: #2872a3;
+  background-color: var(--color-bg);
+  color: var(--color-fg);
 }
